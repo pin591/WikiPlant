@@ -8,7 +8,8 @@
 
 import UIKit
 
-class PlantsViewController: UIViewController, UICollectionViewDataSource {
+class PlantsViewController: UIViewController, UICollectionViewDataSource,
+                           UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var PlantsCollectionView: UICollectionView!
     let reuseIdentifier = "cell"
@@ -45,5 +46,25 @@ class PlantsViewController: UIViewController, UICollectionViewDataSource {
         cell.displayContent(name: plant)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let yourWidth = collectionView.bounds.width/3.0
+        let yourHeight = yourWidth
+        
+        return CGSize(width: yourWidth, height: yourHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+
 }
 

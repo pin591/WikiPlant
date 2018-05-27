@@ -1,18 +1,17 @@
 //
-//  PlantsViewController.swift
+//  UsesViewController.swift
 //  wikiPlant
 //
-//  Created by Ana Rebollo Pin on 23/5/18.
+//  Created by Ana Rebollo Pin on 26/5/18.
 //  Copyright © 2018 Ana Rebollo Pin. All rights reserved.
 //
 
 import UIKit
 
-class PlantsViewController: UIViewController, UICollectionViewDataSource,
-                           UICollectionViewDelegateFlowLayout {
+class UsesViewController: UIViewController, UICollectionViewDataSource,
+UICollectionViewDelegateFlowLayout {
     
-    @IBOutlet weak var plantsCollectionView: UICollectionView!
-    let reuseIdentifier = "plantCell"
+    let reuseIdentifier = "usesCell"
     
     let plants = ["Acebo", "Achicoria", "Agracejo", "Agrimonia", "Angelica", "Arnica", "Calendula",
                   "Cardo santo", "Castaño","Centaurea menor", "Diente de leon", "Enebro", "Estragon", "Eucalipto",
@@ -21,7 +20,7 @@ class PlantsViewController: UIViewController, UICollectionViewDataSource,
                   "Poleo", "Primula", "Puerro", "Pulmonaria", "Rabano", "Romero", "Rosal silvestre", "Salicaria", "Salvia",
                   "Sauco", "Serpol", "Tilo", "Tomillo", "Tormentila", "Toronjil", "Ulmaria", "Uva de gato", "Valeriana",
                   "Vara de oro", "Verbena", "Violeta", "Yezgo", "Zanahoria", "Zarza", "Zurrón de pastor"];
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -65,6 +64,6 @@ class PlantsViewController: UIViewController, UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-
+    
 }
 

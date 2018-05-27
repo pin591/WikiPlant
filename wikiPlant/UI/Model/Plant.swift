@@ -7,31 +7,28 @@
 //
 
 import Foundation
+
 class Plants {
     
     let name: String
-    let description: String
     let dangerous: Bool
-    let plantDescription: String
-    let plantObservation: String
-    let plantImage: String
-    let plantCountryOfOrigin: String
-    let plantUses: [String]
-    let plantActiveComponents: [String]
+    let description: String
+    let observation: String
+    let image: String
+    let location: String
+    let uses: [String]
+    let activeComponents: [String]
     
-    init(name:String, description:String, dangerous: Bool,
-        plantDescription:String, plantObservation:String,
-        plantImage: String, plantCountryOfOrigin: String,
-        plantUses: [String], plantActiveComponents: [String]) {
+    init(name:String, dangerous: Bool, description:String, observation:String,
+         image:String, location: String,uses: [String], activeComponents: [String]) {
         
         self.name = name
-        self.description = description
         self.dangerous = dangerous
-        self.plantDescription = plantDescription
-        self.plantObservation = plantObservation
-        self.plantImage = plantImage
-        self.plantCountryOfOrigin = plantCountryOfOrigin
-        self.plantUses = plantUses
-        self.plantActiveComponents = plantActiveComponents
+        self.description = description
+        self.observation = observation
+        self.image = image
+        self.location = location
+        self.uses = uses
+        self.activeComponents = activeComponents
     }
 }

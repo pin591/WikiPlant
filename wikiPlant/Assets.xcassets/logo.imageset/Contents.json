@@ -2,7 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "plantsTabIcon.jpeg",
+      "filename" : "001-hoja-1.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
       "scale" : "1x"
     },
     {

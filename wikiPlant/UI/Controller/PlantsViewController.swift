@@ -12,7 +12,12 @@ class PlantsViewController: UIViewController, UICollectionViewDataSource,
                            UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var plantsCollectionView: UICollectionView!
+    
     let reuseIdentifier = "plantCell"
+    var actualRow = 0
+    
+    let abcSections = ["A","B","C","D","E","F","G", "H", "I", "J", "K", "M", "N", "O",
+                      "P", "Q","R","S","T","U","V","W", "X", "Y","Z"]
     
     let plants = ["Acebo", "Achicoria", "Agracejo", "Agrimonia", "Angelica", "Arnica", "Calendula",
                   "Cardo santo", "Castaño","Centaurea menor", "Diente de leon", "Enebro", "Estragon", "Eucalipto",
@@ -38,11 +43,12 @@ class PlantsViewController: UIViewController, UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        actualRow = indexPath.row
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: reuseIdentifier,
             for: indexPath) as! PlantsCollectionViewCell
         
-        let plant = plants[indexPath.row]
+        let plant = plants[actualRow]
         cell.displayContent(name: plant)
         return cell
     }
@@ -62,9 +68,19 @@ class PlantsViewController: UIViewController, UICollectionViewDataSource,
         return 0
     }
     
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return abcSections.count
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is PlantsDetailsViewController{
+            let destination = segue.destination as! PlantsDetailsViewController
+            destination.plantName = plants[actualRow]
+        }
+    }
 }
 

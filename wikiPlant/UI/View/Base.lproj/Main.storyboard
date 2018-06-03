@@ -24,13 +24,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EQC-r2-h75">
                                     <size key="itemSize" width="159" height="192"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="plantCell" id="2uX-ed-YWC" customClass="PlantsCollectionViewCell" customModule="wikiPlant" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="159" height="192"/>
+                                        <rect key="frame" x="0.0" y="50" width="159" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="159" height="192"/>
@@ -65,6 +65,24 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="headerPlantCollectionView" id="d8n-cP-pT8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bE-Ch-uKB">
+                                            <rect key="frame" x="181.5" y="15" width="12" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="8bE-Ch-uKB" firstAttribute="centerX" secondItem="d8n-cP-pT8" secondAttribute="centerX" id="3ns-ge-IsE"/>
+                                        <constraint firstItem="8bE-Ch-uKB" firstAttribute="centerY" secondItem="d8n-cP-pT8" secondAttribute="centerY" id="HIt-Gi-Ypm"/>
+                                    </constraints>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="oZH-EB-QKw"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="R1W-5X-adJ"/>
@@ -92,7 +110,7 @@
         <!--Plants-->
         <scene sceneID="D6D-kt-0hk">
             <objects>
-                <viewController id="uMc-w7-03I" sceneMemberID="viewController">
+                <viewController id="uMc-w7-03I" customClass="UsesViewController" customModule="wikiPlant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cie-RS-6b3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="364" y="697"/>
         </scene>
-        <!--Plants View Controller-->
+        <!--Plants Details View Controller-->
         <scene sceneID="tiO-yq-gVO">
             <objects>
-                <viewController id="vkV-v0-ztz" customClass="PlantsViewController" customModule="wikiPlant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vkV-v0-ztz" customClass="PlantsDetailsViewController" customModule="wikiPlant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SY3-tN-keM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,6 +223,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jf4-0q-tI8"/>
                     </view>
+                    <connections>
+                        <outlet property="activeComponentsUILabel" destination="9bE-fS-v4m" id="n8y-Z1-yYl"/>
+                        <outlet property="plantPictureUIImage" destination="MnD-G7-hoO" id="ebx-SO-fTN"/>
+                        <outlet property="usesUILabel" destination="NML-Nt-Di1" id="0ZO-G9-Q5i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyC-Zw-vT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,6 +240,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="frm-DQ-TD6"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="85U-Kq-YI1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

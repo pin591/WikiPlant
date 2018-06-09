@@ -11,9 +11,10 @@ import UIKit
 class UsesViewController: UIViewController, UICollectionViewDataSource,
 UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var usesUICollectionView: UICollectionView!
     let reuseIdentifier = "usesCell"
     
-    let uses = ["Corazon", "Dientes", "Costipado", "Acne", "Cancer", "Tuberculosis", "Calendula"];
+    let uses = ["abcesos", "acidezGastrica"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +58,10 @@ UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
     }
     
 }

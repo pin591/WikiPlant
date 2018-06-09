@@ -20,7 +20,7 @@ class PlantsDetailsViewController: UIViewController {
         super.viewDidLoad()
         activeComponentsUILabel.text = ""
         usesUILabel.text = plantName
-        //plantName = plantName
+//        plantName = plantName
         plantPictureUIImage.image = UIImage(named:plantName)
 
     }

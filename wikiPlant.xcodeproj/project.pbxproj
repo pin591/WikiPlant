@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9241F35020B9CB3C00ED4208 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9241F34F20B9CB3C00ED4208 /* APIService.swift */; };
-		9241F35220B9E77700ED4208 /* UsesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9241F35120B9E77700ED4208 /* UsesViewController.swift */; };
-		9241F35420BA1EFA00ED4208 /* Illness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9241F35320BA1EFA00ED4208 /* Illness.swift */; };
 		9241F35620BB4D5F00ED4208 /* PlantsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9241F35520BB4D5F00ED4208 /* PlantsDetailsViewController.swift */; };
+		92873D7E20F696B80062F425 /* wikiPlantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92873D7D20F696B80062F425 /* wikiPlantUITests.swift */; };
 		929701A520B5963C00753D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929701A420B5963C00753D51 /* AppDelegate.swift */; };
 		929701A720B5963C00753D51 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929701A620B5963C00753D51 /* PlantsViewController.swift */; };
 		929701AA20B5963C00753D51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929701A820B5963C00753D51 /* Main.storyboard */; };
@@ -18,14 +16,24 @@
 		929701AF20B5963F00753D51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929701AE20B5963F00753D51 /* Assets.xcassets */; };
 		929701BA20B5966E00753D51 /* PlantsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929701B920B5966E00753D51 /* PlantsCollectionViewCell.swift */; };
 		929701BC20B5980A00753D51 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929701BB20B5980A00753D51 /* Plant.swift */; };
-		929701C320B59BA400753D51 /* DBConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929701C220B59BA400753D51 /* DBConnection.swift */; };
+		92B4EA5620D509E700644918 /* Garden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B4EA5520D509E700644918 /* Garden.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		92873D8020F696B80062F425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9297019920B5963C00753D51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929701A020B5963C00753D51;
+			remoteInfo = wikiPlant;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		9241F34F20B9CB3C00ED4208 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = wikiPlant/DB/APIService.swift; sourceTree = SOURCE_ROOT; };
-		9241F35120B9E77700ED4208 /* UsesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsesViewController.swift; sourceTree = "<group>"; };
-		9241F35320BA1EFA00ED4208 /* Illness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illness.swift; sourceTree = "<group>"; };
 		9241F35520BB4D5F00ED4208 /* PlantsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsDetailsViewController.swift; sourceTree = "<group>"; };
+		92873D7B20F696B70062F425 /* wikiPlantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wikiPlantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92873D7D20F696B80062F425 /* wikiPlantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikiPlantUITests.swift; sourceTree = "<group>"; };
+		92873D7F20F696B80062F425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		929701A120B5963C00753D51 /* wikiPlant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wikiPlant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929701A420B5963C00753D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		929701A620B5963C00753D51 /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
@@ -35,10 +43,17 @@
 		929701B320B5963F00753D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		929701B920B5966E00753D51 /* PlantsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsCollectionViewCell.swift; sourceTree = "<group>"; };
 		929701BB20B5980A00753D51 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
-		929701C220B59BA400753D51 /* DBConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConnection.swift; sourceTree = "<group>"; };
+		92B4EA5520D509E700644918 /* Garden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garden.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		92873D7820F696B70062F425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9297019E20B5963C00753D51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,18 +64,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9241F34E20B9CB2C00ED4208 /* Network */ = {
+		92873D7C20F696B80062F425 /* wikiPlantUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9241F34F20B9CB3C00ED4208 /* APIService.swift */,
+				92873D7D20F696B80062F425 /* wikiPlantUITests.swift */,
+				92873D7F20F696B80062F425 /* Info.plist */,
 			);
-			path = Network;
+			path = wikiPlantUITests;
 			sourceTree = "<group>";
 		};
 		9297019820B5963C00753D51 = {
 			isa = PBXGroup;
 			children = (
 				929701A320B5963C00753D51 /* wikiPlant */,
+				92873D7C20F696B80062F425 /* wikiPlantUITests */,
 				929701A220B5963C00753D51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				929701A120B5963C00753D51 /* wikiPlant.app */,
+				92873D7B20F696B70062F425 /* wikiPlantUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				929701BF20B59A9B00753D51 /* UI */,
-				9241F34E20B9CB2C00ED4208 /* Network */,
 				929701BE20B599B400753D51 /* DB */,
 				929701AE20B5963F00753D51 /* Assets.xcassets */,
 				929701A420B5963C00753D51 /* AppDelegate.swift */,
@@ -90,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				929701BB20B5980A00753D51 /* Plant.swift */,
-				9241F35320BA1EFA00ED4208 /* Illness.swift */,
+				92B4EA5520D509E700644918 /* Garden.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				929701AB20B5963C00753D51 /* wikiPlant.xcdatamodeld */,
-				929701C220B59BA400753D51 /* DBConnection.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -118,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				929701A620B5963C00753D51 /* PlantsViewController.swift */,
-				9241F35120B9E77700ED4208 /* UsesViewController.swift */,
 				929701B920B5966E00753D51 /* PlantsCollectionViewCell.swift */,
 				9241F35520BB4D5F00ED4208 /* PlantsDetailsViewController.swift */,
 			);
@@ -136,6 +151,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		92873D7A20F696B70062F425 /* wikiPlantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92873D8420F696B80062F425 /* Build configuration list for PBXNativeTarget "wikiPlantUITests" */;
+			buildPhases = (
+				92873D7720F696B70062F425 /* Sources */,
+				92873D7820F696B70062F425 /* Frameworks */,
+				92873D7920F696B70062F425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92873D8120F696B80062F425 /* PBXTargetDependency */,
+			);
+			name = wikiPlantUITests;
+			productName = wikiPlantUITests;
+			productReference = 92873D7B20F696B70062F425 /* wikiPlantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		929701A020B5963C00753D51 /* wikiPlant */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 929701B620B5963F00753D51 /* Build configuration list for PBXNativeTarget "wikiPlant" */;
@@ -159,10 +192,14 @@
 		9297019920B5963C00753D51 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Ana Rebollo Pin";
 				TargetAttributes = {
+					92873D7A20F696B70062F425 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 929701A020B5963C00753D51;
+					};
 					929701A020B5963C00753D51 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
@@ -182,11 +219,19 @@
 			projectRoot = "";
 			targets = (
 				929701A020B5963C00753D51 /* wikiPlant */,
+				92873D7A20F696B70062F425 /* wikiPlantUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		92873D7920F696B70062F425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9297019F20B5963C00753D51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,24 +244,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		92873D7720F696B70062F425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92873D7E20F696B80062F425 /* wikiPlantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9297019D20B5963C00753D51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				929701BC20B5980A00753D51 /* Plant.swift in Sources */,
 				929701A720B5963C00753D51 /* PlantsViewController.swift in Sources */,
-				9241F35220B9E77700ED4208 /* UsesViewController.swift in Sources */,
-				9241F35020B9CB3C00ED4208 /* APIService.swift in Sources */,
 				929701AD20B5963C00753D51 /* wikiPlant.xcdatamodeld in Sources */,
-				929701C320B59BA400753D51 /* DBConnection.swift in Sources */,
+				92B4EA5620D509E700644918 /* Garden.swift in Sources */,
 				929701BA20B5966E00753D51 /* PlantsCollectionViewCell.swift in Sources */,
 				9241F35620BB4D5F00ED4208 /* PlantsDetailsViewController.swift in Sources */,
 				929701A520B5963C00753D51 /* AppDelegate.swift in Sources */,
-				9241F35420BA1EFA00ED4208 /* Illness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92873D8120F696B80062F425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 929701A020B5963C00753D51 /* wikiPlant */;
+			targetProxy = 92873D8020F696B80062F425 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		929701A820B5963C00753D51 /* Main.storyboard */ = {
@@ -230,6 +288,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		92873D8220F696B80062F425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72A6UDK8W3;
+				INFOPLIST_FILE = wikiPlantUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ana-Rebollo-Pin.wikiPlantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wikiPlant;
+			};
+			name = Debug;
+		};
+		92873D8320F696B80062F425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72A6UDK8W3;
+				INFOPLIST_FILE = wikiPlantUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ana-Rebollo-Pin.wikiPlantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wikiPlant;
+			};
+			name = Release;
+		};
 		929701B420B5963F00753D51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -383,6 +481,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		92873D8420F696B80062F425 /* Build configuration list for PBXNativeTarget "wikiPlantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92873D8220F696B80062F425 /* Debug */,
+				92873D8320F696B80062F425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9297019C20B5963C00753D51 /* Build configuration list for PBXProject "wikiPlant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

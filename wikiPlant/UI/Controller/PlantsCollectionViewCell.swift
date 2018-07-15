@@ -15,8 +15,9 @@ class PlantsCollectionViewCell: UICollectionViewCell {
     @IBOutlet var plantUIImage: UIImageView!
     @IBOutlet var plantNameLabel: UILabel!
     
-    func displayContent(name: String) {
-        plantUIImage.image = UIImage(named:name)
-        plantNameLabel.text = name
+    func displayContent(plant: Plant) {
+        plantUIImage.image = UIImage(named:plant.name)
+        //plantNameLabel.text = plant.name
+       // plantNameLabel.alpha = 0
     }
 }
